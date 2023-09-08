@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --background-body-color: #242424;
+    --background-playing-color: #1a1a1a;
+    --background-navbar-color: #000;
+    --background-main-color: #121212;
+    --background-topbar-color: rgb(72, 32, 176);
+    --text-tittle-color: #fff;
+    --text-principal-color: #fff;
+    --text-secundary-color: #AEAEAE;
+    --scrollbar-navbar-color: #6E6E6E;
+
+    /* Pendientes */
+    --background-elevated-highlight: #2a2a2a;
+    --background-elevated-press: #000;
+    --background-tinted-base: hsla(0,0%,100%,.07);
+    --background-tinted-highlight: hsla(0,0%,100%,.1);
+    --background-tinted-press: hsla(0,0%,100%,.04);
+    --background-unsafe-for-small-text-base: #121212;
+    --background-unsafe-for-small-text-highlight: #121212;
+    --background-unsafe-for-small-text-press: #121212;
+    --text-subdued: #a7a7a7;
+    --text-bright-accent: #1ed760;
+    --text-negative: #f15e6c;
+    --text-warning: #ffa42b;
+    --text-positive: #1ed760;
+    --text-announcement: #3d91f4;
+    --essential-base: #fff;
+    --essential-subdued: #727272;
+    --essential-bright-accent: #1ed760;
+    --essential-negative: #e91429;
+    --essential-warning: #ffa42b;
+    --essential-positive: #1ed760;
+    --essential-announcement: #0d72ea;
+    --decorative-base: #fff;
+    --decorative-subdued: #292929;
+}
+
+html, body { height: 100%; }
+
+body {
+    background-color: var(--background-body-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-principal-color);
+    overflow-y: hidden;
+}
+
+.body-container {
+    display: grid;
+    height: 100%;
+    min-height: 100%;
+    grid: 
+        "nav-bar      top-bar"      auto
+        "nav-bar      main-view"    1fr
+        "playing-bar  playing-bar"  auto /
+         auto         1fr;
+    /* grid-template-columns: auto 1fr; */
+    /* grid-template-rows: auto 1fr auto; */
+}
+
+.top-bar {
+    grid-area: top-bar;
+    background-color: blueviolet;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+}
+
+.playing-bar {
+    grid-area: playing-bar;
+    background-color: burlywood;
+    height: 90px;
+}
+
+.main-view {
+    grid-area: main-view;
+}
+
+/* Ul */
+ul {
+    list-style: none;
+}
+
+/* a */
+a {
+    text-decoration: none;
+    color: var( --text-link-color);
+}
+
+@media (max-width: 950px) {
+
+    .body-container {
+        grid-template-areas: 
+            "top-bar"
+            "main-view"
+            "nav-bar"
+            "playing-bar";
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr auto auto;
+    }
+
+}
