@@ -1,0 +1,26 @@
+.main-view {
+    margin: 0 100px 40px;
+}
+
+.main-view img {
+    width: 100%;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 16px;
+    padding: .2em;
+    border-radius: .1em;
+    cursor: pointer;
+}
+
+.mv_prev:hover, .mv_next:hover {
+    background-color: grey;
+}
+
+/* .main-view img {
+    width: 100%;
+    max-height: calc(100vh - var(--header-line-height) - var(--top-bar-height));
+    height: calc(100vh - (var(--header-content-height) + var(--top-bar-height)));
+    object-fit: cover;
+    object-position: 50% 60%;
+} */

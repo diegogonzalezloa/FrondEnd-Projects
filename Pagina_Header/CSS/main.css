@@ -1,0 +1,65 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Backgorund Colors */
+    --html-color: #989866;
+    --body-color: #ffffff;
+    --header-line-color: black;
+    --top-bar-color: #ffffff;
+    --four-color: #f7f1d3;
+    --three-color: #fbc583;
+    --five-color: #cee2e0;
+
+    /* Height Sizes */
+    --header-line-height: 23px;
+    --header-content-height: 130px;
+    --top-bar-height: 60px;
+
+    /* Font Families */
+    --root--ff: 'Noto Sans', sans-serif;
+    /* --root--ff: 'Roboto', sans-serif; */
+
+    /* Font sizes */
+    --header-line-fs: .625rem;
+    --header-content-fs: .75rem;
+    --content_logo-fs: 2.5rem;
+    --content_logo2-fs: 1.125rem;
+    --top-bar-menu-fs: .875rem;
+
+    /* Text Colors */
+    --text-principal-color: black;
+    --text-secundary-color: white;
+    --text-content-social-color: #3a3939;
+
+    /* Hover Colors */
+    --top-bar-menu-hcolor: black;
+    --text-content-social-hcolor: black;
+}
+
+html ,body { height: 100%; }
+
+/* Body */
+body {
+    font-family: var(--root--ff);
+    background-color: var(--body-color);
+    overflow-x: hidden;
+}
+
+/* a */
+a {
+    text-decoration: none;
+}
+
+/* li */
+li {
+    list-style: none;
+}
