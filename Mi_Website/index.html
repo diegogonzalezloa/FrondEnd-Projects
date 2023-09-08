@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego's Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+    <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/experiences.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    <script src="https://kit.fontawesome.com/84de8af0eb.js" crossorigin="anonymous"></script>
+    <script defer src="JS/app.js"></script>
+
+</head>
+<body>
+    <div class="horizontal-padding vertical-padding">
+        <header class="topheader">
+            <nav class="topnav">
+                <a href="#" class="logo">
+                    <img width="50" height="50" src="IMG/photo_background_2.png" alt="Mi Imagen">
+                    <div class="tittle">
+                        Diego González <br />
+                        Ingeniero de Sonido
+                    </div>
+                </a>
+                <button class="open-menu" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Cerrar Menú">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <li><a href="#profile" class="selected">Perfil</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-tittle">Hola, soy <br/>Diego González</h1>
+                <p class="profile-details">
+                    Mis intereses laborales oscilan entre la producción musical (grabación, mezcla y masterización para música) y los medios audiovisuales (grabación, edición, montaje y mezcla para cine, cortos, televisión, comerciales, jingles)
+                </p>
+                <button class="profile-btn">
+                    Descargar cv
+                </button>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="IMG/img-profile_2.png" alt="Imagen Perfil">
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+    <section class="experiences" id="experience">
+        <img src="IMG/wave.svg" alt="division_top" class="wave">
+        <div class="experiences-body">
+            <h2 class="experiences-tittle">Experiences</h2>
+            <div class="experiences-grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience-date">2020-2022</div>
+                    <div class="experience-company">Vagancia Studio</div>
+                    <div class="experience-position">Mastering Engineer</div>
+                    <div class="experience-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque delectus ullam est placeat, sunt iure autem itaque reprehenderit asperiores ex ratione ducimus fugit repudiandae, non excepturi voluptatum impedit possimus voluptatem, totam molestiae voluptate? Sit porro commodi temporibus numquam vel!
+                    </div>
+                </div>
+                <div class="experience experience_left">
+                    <div class="experience-date">2018-2019</div>
+                    <div class="experience-company">Que te Importa Studio</div>
+                    <div class="experience-position">Recording Engineer</div>
+                    <div class="experience-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque delectus ullam est placeat, sunt iure autem itaque reprehenderit asperiores ex ratione ducimus fugit repudiandae, non excepturi voluptatum impedit possimus voluptatem, totam molestiae voluptate? Sit porro commodi temporibus numquam vel!
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience-date">2017</div>
+                    <div class="experience-company">Hola Mundo Studio</div>
+                    <div class="experience-position">Mixing Engineer</div>
+                    <div class="experience-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque delectus ullam est placeat, sunt iure autem itaque reprehenderit asperiores ex ratione ducimus fugit repudiandae, non excepturi voluptatum impedit possimus voluptatem, totam molestiae voluptate? Sit porro commodi temporibus numquam vel!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="IMG/wave.svg" alt="division_bottom" class="wave wave_bottom">
+    </section>
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills" id="skills">
+            <h2 class="skills-tittle">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">Pro Tools</li>
+                <li class="skills-skill">Logic Pro</li>
+                <li class="skills-skill">MATLAB</li>
+                <li class="skills-skill">C++</li>
+                <li class="skills-skill">Python</li>
+                <li class="skills-skill">Pure Data</li>
+                <li class="skills-skill">Latex</li>
+                <li class="skills-skill">REW</li>
+                <li class="skills-skill">HTML-CSS</li>
+            </ul>
+        </section>
+    </div>
+    <section class="contact" id="contact">
+        <h2 class="contact-tittle">Contacto</h2>
+    </section>
+</body>
+</html>

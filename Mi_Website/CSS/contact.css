@@ -1,0 +1,15 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: var(--primary-color);
+}
+
+.contact-tittle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+    color: var(--text-color-inverse);
+}

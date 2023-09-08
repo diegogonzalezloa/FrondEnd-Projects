@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+/* Profile */
+.profile {
+    text-align: center;
+}
+
+/* Profile Info */
+.profile-info {
+    margin-bottom: 25px;
+}
+
+/* Profile Title*/
+.profile-tittle {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Profile Details */
+.profile-details {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+/* Profile Button */
+.profile-btn {
+    background-color: var(--primary-color);  
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 20px;
+    padding: .5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    filter: brightness(130%);
+}
+
+/* Profile Img Section */
+.profile-img-section {
+    position: relative;
+}
+
+.profile-img {
+    width: 80%;
+    max-width: 300px;
+    transform: scaleX(-1);
+}
+
+.profile-img-line {
+    background-color: var(--secundary-color);
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+@media (min-width: 950px) {
+
+    /* Profile */
+    .profile {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    /* Profile Info */
+    .profile-info {
+        margin-bottom: 0px;
+    }
+
+    /* Profile Title*/
+    .profile-tittle {
+        font-size: 60px;
+    }
+
+    /* Profile Details */
+    .profile-details {
+        font-size: 25px;
+        margin: 30px 0;
+    }
+
+    /* Profile Button */
+    .profile-btn {
+        font-size: 28px;
+    }
+
+    /* Profile Img Section */
+    .profile-img {
+        width: 100%;
+        max-width: 350px;
+        transform: scaleX(1);
+    }
+
+}
